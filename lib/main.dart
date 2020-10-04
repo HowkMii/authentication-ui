@@ -123,7 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
                               Center(
                                 child: ImageIcon(
                                   AssetImage('assets/facebook.png'),
-                                  color: Colors.blue,
                                 ),
                               ),
                               SizedBox(width: 10.0),
