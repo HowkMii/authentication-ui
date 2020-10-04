@@ -10,14 +10,19 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         resizeToAvoidBottomPadding: false,
-        body: ListView(
-            children: <Widget>[
+        body: ListView(children: <Widget>[
           Container(
             child: Stack(
               children: <Widget>[
-                IconButton(icon: Icon(Icons.arrow_back, size: 40, color: Colors.black,), onPressed: (){
-                  Navigator.pop(context);
-                }),
+                IconButton(
+                    icon: Icon(
+                      Icons.arrow_back,
+                      size: 40,
+                      color: Colors.black,
+                    ),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }),
                 Container(
                   padding: EdgeInsets.fromLTRB(40.0, 50.0, 0.0, 0.0),
                   child: Text(
@@ -68,7 +73,6 @@ class _SignupPageState extends State<SignupPage> {
                     obscureText: true,
                   ),
                   SizedBox(height: 10.0),
-                  
                   SizedBox(height: 40.0),
                   Container(
                       height: 40.0,
@@ -106,22 +110,17 @@ class _SignupPageState extends State<SignupPage> {
                         onTap: () {
                           Navigator.of(context).pop();
                         },
-                        child:
-
-                        Center(
+                        child: Center(
                           child: Text('Go Back',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Montserrat')),
                         ),
-
-
                       ),
                     ),
                   ),
                 ],
               )),
-          
         ]));
   }
 }

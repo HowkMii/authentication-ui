@@ -121,8 +121,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
                               Center(
-                                child:
-                                    ImageIcon(AssetImage('assets/facebook.png'), color: Colors.blue,),
+                                child: ImageIcon(
+                                  AssetImage('assets/facebook.png'),
+                                  color: Colors.blue,
+                                ),
                               ),
                               SizedBox(width: 10.0),
                               Center(
